@@ -1,0 +1,81 @@
+<!Doctype html>
+  <html>
+  <head>
+  	<title>CSS Animation</title>
+  	<style type="text/css">
+  	    .box {
+        background: #2db34a;
+        transition-property: background, color;
+        transition-duration: 1s, 0.5;
+        transition-delay: 1.5s, 1s; 
+        transition-timing-function: linear, ease;
+}
+        .box:hover {
+        background: #ff7b29;
+}
+  	</style>
+  	<style type="text/css">
+  		.box2 {
+  			background-color: #87CEEB;
+  			font-size: 12px;
+  			transition: 
+  			    border-color 0.5s ease-in 1s,
+  			    font-size 0.5s ease-in 0.2s;
+  		}
+  		.box2:hover {
+  			background-color: #FDF5E6;
+            font-size: 20px;
+  		}
+  	</style>
+  	<style type="text/css">
+  		.box3 {
+  			transition: transform 1s linear;
+  		}
+  		.box3:hover {
+  			transform: translate(20px, 50px);
+  		}
+  	</style>
+  	<style type="text/css">
+  		.box4 {
+  			width: 300px;
+  			height: 300px;
+  			background-color: #FFE4C4;
+  			transition: transform 3s linear;
+  		}
+  		.box4:hover {
+  			transform: rotate(360deg);
+  		}
+  	</style>
+  	<style type="text/css">
+  		.box5 {
+  			width: 100px;
+  			height: 100px;
+  			background-color: #F4A460;
+  			transition: transform 1s linear;
+  		}
+  		.box5:hover {
+  			transform: skew(30deg);
+  		}
+  	</style>
+  </head>
+  <body>
+  	<div class="box">
+  		<a>I am a box</a>
+  	</div>
+  	<br></br>
+  	<div class="box2">
+  		<a>Shorthand transition</a>
+  	</div>
+  	<br></br>
+  	<div class="box3">
+  		<a>Y-axis is reversed</a>
+  	</div>
+  	<br>
+  	<div class="box4">
+  		<a>what is rotate</a>
+  	</div>
+  	<br>
+  	<div class="box5">
+  		<a>what is skew</a>
+  	</div>
+  </body>
